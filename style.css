@@ -25,17 +25,31 @@
     width: 60%;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .searchBar__nav input {
    height: 56px;
    width: 745px;
    left: 437px;
-   border-radius: 8px;
+   border: none;
    outline: none;
+   border-radius: 8px;
 }
-.searchBar__nav input[placeholder] {
-    color: red;
+::placeholder {
+   padding: 10px;
+   height: 24px;
+   width: 200px;
+   left: 466px;
+   top: 36px;
+   font-family: Samsung Sharp Sans,sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #7E7E7E;
 }
+
 .searchBar__nav .fa-magnifying-glass {
     height: 56px;
     width: 59px;
@@ -44,6 +58,8 @@
     color: white;
     display: grid;
     place-items: center;
+    position: absolute;
+    right: 65px;
 }
 
 .righSide__nav {
@@ -58,6 +74,24 @@
 .rightside__navleft:hover {
     cursor: pointer;
 }
+.user__icon {
+    color: black;
+    height: 24px;
+    width: 24px;
+}
+.shopping__icon {
+    color: black;
+    height: 24px;
+    width: 24px;
+}
+.my__account {
+    margin-left: 15px;
+}
+.vl {
+    border-left: 1px solid #646464;
+    height: 25px;
+    margin-left: 12px;
+}
 .rightside__navright {
     display: flex;
     align-items: center;
@@ -65,6 +99,14 @@
 }
 .rightside__navright:hover {
     cursor: pointer;
+}
+.fa-cart-shopping {
+    color: black;
+    height: 24px;
+    width: 24px;
+}
+.my__cart {
+    margin-left: 15px;
 }
 
 .menu__bar {
@@ -74,11 +116,18 @@
     height: 76px;
     color: white;
     justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.down__arrow {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    color: white;
 }
 
 .menu__bar span {
    font-family: Samsung Sharp Sans,sans-serif;
-   font-size: 19px;
+   font-size: 14px;
    font-weight: 500;
    line-height: 24px;
    letter-spacing: 0em;
@@ -103,7 +152,7 @@
 }
 .left__side span {
     font-family: Samsung Sharp Sans,sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0em;
@@ -124,11 +173,7 @@
 .right__side span:hover {
     cursor: pointer;
 }
-
-.iphone__details {
-    display: flex;
-    justify-content: space-around;
-}
+/* iphone section */
 .iphone__top__smartphone {
    font-family: Samsung Sharp Sans,sans-serif ;
    font-size: 21px;
@@ -150,13 +195,18 @@
 .iphone__second {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 .iphone__second span {
     border: 1px solid gray;
     padding: 5px;
+    border-radius: 8px;
 }
 .iphone__second span:hover {
     cursor: pointer;
+}
+.iphone__button__main {
+    margin-top: 10px;
 }
 .iphone__button__main button {
     height: 48px;
@@ -171,6 +221,8 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
 }
 .iphone__button__main button:hover {
     cursor: pointer;
@@ -180,11 +232,15 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    margin-top: 10px;
 }
 .iphone__button__1 button {
     height: 38px;
     padding: 15px;
     text-align: center;
+    border-radius: 8px;
+    border: none;
+    width: 45%;
 }
 .iphone__button__1 button:hover {
     cursor: pointer;
@@ -193,9 +249,46 @@
     height: 38px;
     padding: 15px;
     text-align: center;
+    border-radius: 8px;
+    border: none;
+    width: 45%;
 }
 .iphone__button__2 button:hover {
     cursor: pointer;
+}
+.button-1 {
+    background-color: #F5F5F5;
+    margin: 6px;
+    padding: 6px;
+    text-align: center;
+}
+.button-2 {
+    background-color:#404956;
+    margin: 6px;
+    padding: 6px;
+    text-align: center;
+    color: white;
+}
+.button-3 {
+    background-color:#F5F5F5;
+    margin: 6px;
+    padding: 6px;
+    text-align: center;
+}
+.button-4 {
+    background-color:#404956;
+    margin: 6px;
+    padding: 6px;
+    text-align: center;
+    color: white;
+}
+.color {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.color__dot {
+  margin-left: 18px;
 }
 .dot1 {
     height: 25px;
@@ -227,4 +320,105 @@
 .iphone__two img {
     height: 167px;
     width: 167px;
+}
+
+.iphone__list {
+    margin-top: 10px;
+}
+
+.iphone__details {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 48px;
+}
+.first__column {
+    width: 33.33%;
+}
+.second__column {
+    width: 33.33%;
+}
+.third__column {
+    width: 33.33%;
+} 
+
+/* third column */
+
+.third__column {
+    display: flex;
+    flex-direction: column;
+}
+.first__box {
+    background-color: #F4F4F4;
+    padding: 10px;
+    border-radius: 9px;
+}
+.first__box h4 {
+  color: #F16A4F;
+  font-family: Samsung Sharp Sans,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;   
+  padding: 10px;
+}
+.first__box p {
+  font-family: Samsung Sharp Sans,sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px;
+}
+.first__box button {
+  height: 32px;
+  width: 129px;
+  left: 1322px;
+  top: 565px;
+  border: none;
+  border-radius: 9px;
+  background-color: #F16A4F;
+  color: white;
+  padding: 10px;
+}
+
+.second__box {
+    background-color: #F4F4F4;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 9px;
+}
+.second__box__logo {
+    height: 35px;
+    width: 45px;
+}
+.second__box__div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+.second__box__h6 {
+  font-family: Samsung Sharp Sans,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #404956;
+}
+.second__box__para {
+  font-family: Samsung Sharp Sans,sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #404956;
+}
+hr {
+    margin-top: 8px;
 }

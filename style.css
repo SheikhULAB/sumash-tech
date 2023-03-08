@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top__nav {
+    height: 102px;
+    left: 0px;
+    top: 0px;
+    background-color: #D5D5D5;
+    display: flex;
+    align-items: center;
+}
+
+.logo__nav {
+    width: 20%;
+}
+.logo__nav img {
+   width: 248.48px;
+   height: 31.74px;
+   left: 109px;
+}
+
+.searchBar__nav {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.searchBar__nav input {
+   height: 56px;
+   width: 745px;
+   left: 437px;
+   border-radius: 8px;
+   outline: none;
+}
+.searchBar__nav input[placeholder] {
+    color: red;
+}
+.searchBar__nav .fa-magnifying-glass {
+    height: 56px;
+    width: 59px;
+    border-radius: 8px; 
+    background-color: #F16A4F;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.righSide__nav {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.rightside__navleft {
+  display: flex;
+  align-items: center;
+}
+.rightside__navleft:hover {
+    cursor: pointer;
+}
+.rightside__navright {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.rightside__navright:hover {
+    cursor: pointer;
+}
+
+.menu__bar {
+    display: flex;
+    align-items: center;
+    background-color: #404956;
+    height: 76px;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.menu__bar span {
+   font-family: Samsung Sharp Sans,sans-serif;
+   font-size: 19px;
+   font-weight: 500;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: left;
+}
+.menu__bar span:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.home__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left__side {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 534px;
+}
+.left__side span {
+    font-family: Samsung Sharp Sans,sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.left__side span:hover {
+    cursor: pointer;
+}
+.right__side {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 205px;
+}
+.right__side span {
+    width: 34.62px;
+}
+.right__side span:hover {
+    cursor: pointer;
+}
+
+.iphone__details {
+    display: flex;
+    justify-content: space-around;
+}
+.iphone__top__smartphone {
+   font-family: Samsung Sharp Sans,sans-serif ;
+   font-size: 21px;
+   font-weight: 400;
+   line-height: 26px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #404956;
+}
+.iphone__bottom {
+   font-family: Samsung Sharp Sans,sans-serif;
+   font-size: 44px;
+   font-weight: 700;
+   line-height: 55px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #404956;
+}
+.iphone__second {
+    display: flex;
+    justify-content: space-between;
+}
+.iphone__second span {
+    border: 1px solid gray;
+    padding: 5px;
+}
+.iphone__second span:hover {
+    cursor: pointer;
+}
+.iphone__button__main button {
+    height: 48px;
+    width: 100%;
+    background-color: #F16A4F;
+    color: white;
+    font-family: Samsung Sharp Sans,sans-serif;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.iphone__button__main button:hover {
+    cursor: pointer;
+}
+.iphone__button__sencond {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.iphone__button__1 button {
+    height: 38px;
+    padding: 15px;
+    text-align: center;
+}
+.iphone__button__1 button:hover {
+    cursor: pointer;
+}
+.iphone__button__2 button {
+    height: 38px;
+    padding: 15px;
+    text-align: center;
+}
+.iphone__button__2 button:hover {
+    cursor: pointer;
+}
+.dot1 {
+    height: 25px;
+    width: 25px;
+    background-color: #118B91;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot2 {
+    height: 25px;
+    width: 25px;
+    background-color: #F16A4F;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot3 {
+    height: 25px;
+    width: 25px;
+    background-color: #404956;
+    border-radius: 50%;
+    display: inline-block;
+  }
+.iphone__one img {
+    width: 340px;
+    height: 340px;
+    object-fit: contain;
+}
+
+.iphone__two img {
+    height: 167px;
+    width: 167px;
+}

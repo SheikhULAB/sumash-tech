@@ -195,7 +195,7 @@
 }
 .iphone__top__smartphone {
    font-family: Samsung Sharp Sans,sans-serif ;
-   font-size: 21px;
+   font-size: 18px;
    font-weight: 400;
    line-height: 26px;
    letter-spacing: 0em;
@@ -204,7 +204,7 @@
 }
 .iphone__bottom {
    font-family: Samsung Sharp Sans,sans-serif;
-   font-size: 39px;
+   font-size: 34px;
    font-weight: 600;
    line-height: 55px;
    letter-spacing: 0em;
@@ -217,7 +217,6 @@
     margin-top: 10px;
 }
 .iphone__second span {
-    border: 1px solid gray;
     padding: 5px;
     border-radius: 8px;
     width: 31%;
@@ -228,6 +227,39 @@
 }
 .iphone__second span:hover {
     cursor: pointer;
+}
+.apple__logo__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+}
+.heart__logo__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(64, 73, 86, 0.34);
+    border-radius: 9px;
+}
+.compare__logo__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apple__logo {
+    width: 71px;
+    height: 37px;
+    object-fit: contain;
+}
+.heart__logo {
+    width: 71px;
+    height: 37px;
+    object-fit: contain;
+}
+.compare__logo {
+    width: 71px;
+    height: 37px;
+    object-fit: contain;
 }
 .iphone__button__main {
     margin-top: 10px;
@@ -258,10 +290,16 @@
     width: 100%;
     margin-top: 10px;
 }
+.iphone__button__1 {
+    display: flex;
+}
+.iphone__button__2 {
+    display: flex;
+}
 .iphone__button__1 button {
     height: 38px;
     padding: 15px;
-    text-align: center;
+    text-align: center !important;
     border-radius: 8px;
     border: none;
     width: 45%;
@@ -283,9 +321,12 @@
 .button-1 {
     margin: 6px;
     padding: 6px;
-    text-align: center;
+    text-align: center !important;
     background-color:white;
     border: 1px solid #A9A9A9 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .button-2 {
     background-color:#404956;
@@ -293,6 +334,9 @@
     padding: 6px;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .button-3 {
     margin: 6px;
@@ -300,6 +344,9 @@
     text-align: center;
     background-color:white;
     border: 1px solid #A9A9A9 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .button-4 {
     background-color:#404956;
@@ -307,6 +354,9 @@
     padding: 6px;
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .color {
     display: flex;
@@ -346,14 +396,32 @@
 .iphone__two img {
     height: 167px;
     width: 167px;
+    margin-top: 15px;
 }
 
 .iphone__list {
     margin-top: 10px;
 }
 
+.iphone__list ul > li {
+    line-height: 34px;
+    list-style-type: none;
+    position: relative;
+    padding-left: 12px;
+}
+.iphone__list ul > li:before {
+  content: "\25BA \0020";
+  font-size: 10px;
+  position: absolute;
+  left: -10px;
+}
+
 .first__column {
     width: 33.33%;
+}
+.first__column img {
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-radius: 32px; 
 }
 .second__column {
     width: 33.33%;
@@ -419,6 +487,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 5px;
+    height: 84px;
 }
 .second__box__h6 {
   font-family: Samsung Sharp Sans,sans-serif;
